@@ -15,10 +15,10 @@ function renderizaConteudo(dados) {
                 <img src="${listas.listaImagens[i].thumbnail.url}" alt="Foto em miniatura do usuário">
             </picture>
             <figcaption class="legenda-invisivel ">
-                <span>${listas.listaNomeUsuarios[i]}</span>
-                <span>${listas.listaNumeroCurtidas[i]}</span>
-                <span>${listas.listaNumeroComentarios[i]}</span>
-                <span>${listas.listaDataPublicacoes[i]}</span>
+                <span>@${listas.listaNomeUsuarios[i]}</span>
+                <span>❤${listas.listaNumeroCurtidas[i]}</span>
+                <span>💬${listas.listaNumeroComentarios[i]}</span>
+                <span>📅${listas.listaDataPublicacoes[i]}</span>
             </figcaption>
             </a>
         `

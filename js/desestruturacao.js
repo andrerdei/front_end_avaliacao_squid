@@ -48,8 +48,9 @@ function desestruturaComentarios(dados) {
 
 function desestruturaDataPublicacoes(dados) {
     return dados.medias.map(media => {
-        const { obtidoEm } = media
-        return obtidoEm
+        const { criadoEm } = media
+        const dataFormatada = new Date(criadoEm)
+        return formataData(dataFormatada)
     })
 }
 
