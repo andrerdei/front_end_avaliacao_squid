@@ -38,6 +38,12 @@
     width: 30%;
   }
 
+  @media(orientation: portrait){
+    #pre-loader-image{
+      width: 60%;
+    }
+  }
+
 
 /* Estilos do Loader */
 

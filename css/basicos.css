@@ -30,9 +30,15 @@ body a{
 }
 
 #squid-logo{
-  width: 50%;
+  width: 20em;
   padding-top: 2em;
   padding-bottom: 2em;
+}
+
+@media(orientation: portrait){
+  #squid-logo{
+    width: 70%;
+  }
 }
 
 #secao-feed{
@@ -52,13 +58,6 @@ figure{
   padding: 0;
   margin: .4em;
   position: relative;
-}
-
-@media(orientation: portrait){
-  figure{
-    width: 14em;
-    height: 14em;
-  }
 }
 
 @media (hover: hover) {
