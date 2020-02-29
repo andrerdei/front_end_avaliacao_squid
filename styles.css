@@ -5,3 +5,144 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
+body a{
+  text-decoration: none;
+  color: white;
+}
+
+.container{
+  width: 50vw;
+  height: 100vh;
+  margin: auto;
+}
+
+@media(orientation: portrait){
+  .container{
+    width: 90vw;
+    height: 100vh;
+  }
+}
+
+#logo-div{
+  width: 100%;
+  text-align: center;
+}
+
+#squid-logo{
+  width: 50%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#secao-feed{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Estilos do Pre-Loader */
+
+.pre-loader-div{
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  z-index: 11;
+  opacity: 1;
+  animation: .8s ease-in-out;
+  animation-delay: 2.2s;
+  animation-fill-mode: forwards;
+  animation-name: pre-loader-div;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes pre-loader-div{
+  0%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0; 
+    z-index: 0;
+  }
+}
+
+.white-div{
+  width: 100vw;
+  height: 150vh;
+  background-color: white;
+}
+
+#pre-loader-image{
+  width: 30%;
+}
+
+
+/* Estilos para Cada Figure */
+
+figure{
+  width: 8em;
+  height: 8em;
+  padding: 0;
+  margin: .4em;
+  position: relative;
+}
+
+@media(orientation: portrait){
+  figure{
+    width: 14em;
+    height: 14em;
+  }
+}
+
+@media (hover: hover) {
+  figure:hover{
+    transform: scale(.95)
+  }
+}
+
+figure img{
+  width: 100%;
+  height: 100%;
+}
+
+figure figcaption{
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  box-sizing: border-box;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+figure figcaption span{
+  width: 100%;
+}
+
+/* Estilos Para o Hover da Legenda */
+
+.legenda-invisivel{
+  opacity: 0;
+}
+
+@media (hover: hover) {
+  .legenda-invisivel:hover{
+    opacity: 1;
+    box-shadow: inset 100vw 100vw 100vw 100vw rgba(0,0,0,.4);
+  }
+}
