@@ -134,6 +134,7 @@ figure figcaption span{
   width: 100%;
 }
 
+
 /* Estilos Para o Hover da Legenda */
 
 .legenda-invisivel{
@@ -145,4 +146,44 @@ figure figcaption span{
     opacity: 1;
     box-shadow: inset 100vw 100vw 100vw 100vw rgba(0,0,0,.4);
   }
+}
+
+
+/* Estilos do Loader */
+
+.loader-div{
+  width: 100%;
+  height: 15%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 16px solid pink;
+  border-top: 16px solid thistle;
+  border-bottom: 16px solid thistle;
+  border-radius: 50%;
+  width: 0px;
+  height: 20%;
+  animation: loader 1s linear infinite;
+  position: absolute;
+}
+
+@keyframes loader {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media(orientation: portrait){
+  .loader {
+    width: 0px;
+    height: 10%;
+  }
+}
+
+.loader-div-invisivel{
+  display: none;
 }

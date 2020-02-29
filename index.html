@@ -1,26 +1,36 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <title>Squid Instagram Feed</title>
-    <meta name="description" content="Squid Instagram Feed">
-    <meta name="author" content="Squidapp">
-    <link rel="stylesheet" href="styles.css?v=1.0">
-  </head>
-  <body>
-    <div class="pre-loader-div white-div"></div>
-    <div class="pre-loader-div">
-      <img src="assets/squid.gif" alt="Logo da Squid" id="pre-loader-image">
+
+<head>
+  <meta charset="utf-8">
+  <title>Squid Instagram Feed</title>
+  <meta name="description" content="Squid Instagram Feed">
+  <meta name="author" content="Squidapp">
+  <link rel="stylesheet" href="styles.css?v=1.0">
+</head>
+
+<body>
+  <div class="pre-loader-div white-div"></div>
+  <div class="pre-loader-div">
+    <img src="assets/squid.gif" alt="Logo da Squid" id="pre-loader-image">
+  </div>
+  <main class="container">
+    <div id="logo-div">
+      <img id="squid-logo" src="assets/logo.svg" alt="Logo da Squid">
     </div>
-    <main class="container">
-      <div id="logo-div"><img id="squid-logo" src="assets/logo.svg" alt="Logo da Squid"></div>
-      <section id="secao-feed">
-      </section>
-    </main>
-    <script src="js/global.js"></script>
-    <script src="js/formata_data.js"></script>
-    <script src="js/desestruturacao.js"></script>
-    <script src="js/renderizacao.js"></script>
-    <script src="js/fetch.js"></script>
-  </body>
+    <section id="secao-feed">
+
+    </section>
+    <div id="loader-element" class="loader-div">
+      <span class="loader"></span>
+    </div>
+  </main>
+  <script src="js/global.js"></script>
+  <script src="js/formata_data.js"></script>
+  <script src="js/desestruturacao.js"></script>
+  <script src="js/renderizacao.js"></script>
+  <script src="js/manipula_loader.js"></script>
+  <script src="js/fetch.js"></script>
+</body>
+
 </html>
