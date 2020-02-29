@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     realizaFetch(firstUrl)
 
     window.addEventListener("scroll", () => {
-        if (document.documentElement.scrollTop >= secaoFeed.clientHeight - 2500
+        if (document.documentElement.scrollTop > secaoFeed.clientHeight - 2500
             && controlaEventoScroll == true) {
             controlaEventoScroll = false
             manipulaLoader()
@@ -28,7 +28,7 @@ function realizaFetch(url) {
         })
         .catch(err => {
             manipulaLoader()
-            console.log("Não foi possível carregar o conteúdo, tente novamente")
+            alert("Não foi possível carregar o conteúdo, atualize a página")
         })
 }
 
