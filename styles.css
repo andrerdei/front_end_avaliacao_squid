@@ -1,3 +1,7 @@
+/* Estilos Básicos do Corpo */
+
 body {
   background: #fff;
+  width: 100vw;
+  height: 100vh;
 }
